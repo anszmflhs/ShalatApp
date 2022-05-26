@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/fragmentShalat">
+
+    <fragment
+        android:id="@+id/fragmentShalat"
+        android:name="com.example.shalatapp.fragment.FragmentShalat"
+        android:label="fragment_shalat_wajib"
+        tools:layout="@layout/fragment_shalat" >
+        <action
+            android:id="@+id/action_fragmentShalat_to_fragmentDetailShalat"
+            app:destination="@id/fragmentDetailShalat" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDalil"
+        android:name="com.example.shalatapp.fragment.FragmentDalil"
+        android:label="fragment_shalat_sunnah"
+        tools:layout="@layout/fragment_dalil" >
+        <action
+            android:id="@+id/action_fragmentDalil_to_fragmentDetailDalil"
+            app:destination="@id/fragmentDetailDalil" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentBatalShalat"
+        android:name="com.example.shalatapp.fragment.FragmentBatalShalat"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_batal_shalat" >
+        <action
+            android:id="@+id/action_fragmentBatalShalat_to_fragmentDetailBatalShalat"
+            app:destination="@id/fragmentDetailBatalShalat" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDetailShalat"
+        android:name="com.example.shalatapp.fragmentDetail.FragmentDetailShalat"
+        android:label="fragment_detail_shalat"
+        tools:layout="@layout/fragment_detail_shalat" >
+        <action
+            android:id="@+id/action_fragmentDetailShalat_to_fragmentShalat"
+            app:destination="@id/fragmentShalat" />
+        <argument
+            android:name="judul_detail"
+            app:argType="string"
+            android:defaultValue="judul_detail" />
+        <argument
+            android:name="deskripsi_detail"
+            app:argType="string"
+            android:defaultValue="deskripsi_detail" />
+        <argument
+            android:name="gambar_detail"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDetailDalil"
+        android:name="com.example.shalatapp.fragmentDetail.FragmentDetailDalil"
+        android:label="fragment_detail_dalil"
+        tools:layout="@layout/fragment_detail_dalil" >
+        <action
+            android:id="@+id/action_fragmentDetailDalil_to_fragmentDalil"
+            app:destination="@id/fragmentDalil" />
+        <argument
+            android:name="judul_detail_dalil"
+            app:argType="string"
+            android:defaultValue="judul_detail_dalil" />
+        <argument
+            android:name="desk_detail_dalil"
+            app:argType="string"
+            android:defaultValue="desk_detail_dalil" />
+        <argument
+            android:name="gambar_detail_dalil"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDetailBatalShalat"
+        android:name="com.example.shalatapp.fragmentDetail.FragmentDetailBatalShalat"
+        android:label="fragment_detail_batal_shalat"
+        tools:layout="@layout/fragment_detail_batal_shalat" >
+        <action
+            android:id="@+id/action_fragmentDetailBatalShalat_to_fragmentBatalShalat"
+            app:destination="@id/fragmentBatalShalat" />
+        <argument
+            android:name="judul_detail_batal"
+            app:argType="string"
+            android:defaultValue="judul_detail_batal" />
+        <argument
+            android:name="desk_detail_batal"
+            app:argType="string"
+            android:defaultValue="desk_detail_batal" />
+        <argument
+            android:name="gambar_detail_batal"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>

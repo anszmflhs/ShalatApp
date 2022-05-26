@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/fragmentShalat"
+        android:title="Kategori Shalat"
+        android:icon="@drawable/salat"/>
+    <item
+        android:id="@+id/fragmentDalil"
+        android:title="Dalil Shalat"
+        android:icon="@drawable/ic_baseline_menu_book_24"/>
+    <item
+        android:id="@+id/fragmentBatalShalat"
+        android:title="Batal Shalat"
+        android:icon="@drawable/ic_baseline_do_not_disturb_24"/>
+</menu>
