@@ -15,6 +15,6 @@ interface RetrofitInterface {
     suspend fun getDalil() : Response<List<DalilShalatItem>>
 
     @GET("Data/batalshalat.json")
-    suspend fun getDataBatalShalat() : Response<List<DalilShalatItem>>
+    suspend fun getDataBatalShalat() : Response<List<BatalShalatItem>>
 
 }

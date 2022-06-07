@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.bumptech.glide.Glide
 import com.example.shalatapp.databinding.ActivityDetailBinding
+import com.example.shalatapp.model.BatalShalatItem
 import com.example.shalatapp.model.DalilShalatItem
 
 class DetailActivity : AppCompatActivity() {
@@ -19,7 +20,7 @@ class DetailActivity : AppCompatActivity() {
         binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val data = intent.getParcelableExtra<DalilShalatItem>(Detail_Data)
+        val data = intent.getParcelableExtra<BatalShalatItem>(Detail_Data)
 
         binding.txtJudulDetail.text = data?.judul
         binding.txtDeskDetail.text = data?.deskripsi

@@ -11,9 +11,9 @@ import com.example.shalatapp.model.DalilShalatItem
 
 class BatalShalatAdapter : RecyclerView.Adapter<BatalShalatViewHolder>() {
 
-    private var listItemBatalShalat = arrayListOf<DalilShalatItem>()
+    private var listItemBatalShalat = arrayListOf<BatalShalatItem>()
 
-    fun addData(items : List<DalilShalatItem>) {
+    fun addData(items : List<BatalShalatItem>) {
         listItemBatalShalat.clear()
         listItemBatalShalat.addAll(items)
     }

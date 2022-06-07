@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.shalatapp.DetailActivity
+import com.example.shalatapp.DetailActivityDalil
 import com.example.shalatapp.databinding.ItemRecyclerDalilBinding
 import com.example.shalatapp.fragment.FragmentDalilDirections
 import com.example.shalatapp.model.DalilShalatItem
@@ -29,8 +30,8 @@ class DalilAdapter : RecyclerView.Adapter<DalilViewHolder>() {
         holder.bindView(data)
 
         holder.itemView.setOnClickListener {
-            val intent = Intent(it.context,DetailActivity::class.java)
-            intent.putExtra(DetailActivity.Detail_Data, data)
+            val intent = Intent(it.context,DetailActivityDalil::class.java)
+            intent.putExtra(DetailActivityDalil.DETAIL, data)
             it.context.startActivity(intent)
         }
     }

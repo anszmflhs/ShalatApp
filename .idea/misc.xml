@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/Users/62878/AndroidStudioProjects/ShalatApp/app/src/main/res/drawable/gradient_end_color.xml" value="0.2265" />
         <entry key="..\:/Users/62878/AndroidStudioProjects/ShalatApp/app/src/main/res/layout/activity_detail.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/62878/AndroidStudioProjects/ShalatApp/app/src/main/res/layout/activity_detail_dalil.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/62878/AndroidStudioProjects/ShalatApp/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/62878/AndroidStudioProjects/ShalatApp/app/src/main/res/layout/fragment_batal_shalat.xml" value="0.176" />
         <entry key="..\:/Users/62878/AndroidStudioProjects/ShalatApp/app/src/main/res/layout/fragment_dalil.xml" value="0.22826086956521738" />
@@ -12,7 +13,7 @@
         <entry key="..\:/Users/62878/AndroidStudioProjects/ShalatApp/app/src/main/res/layout/fragment_detail_dalil.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/62878/AndroidStudioProjects/ShalatApp/app/src/main/res/layout/fragment_detail_shalat.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/62878/AndroidStudioProjects/ShalatApp/app/src/main/res/layout/fragment_profile.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/62878/AndroidStudioProjects/ShalatApp/app/src/main/res/layout/fragment_shalat.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/62878/AndroidStudioProjects/ShalatApp/app/src/main/res/layout/fragment_shalat.xml" value="0.264" />
         <entry key="..\:/Users/62878/AndroidStudioProjects/ShalatApp/app/src/main/res/layout/item_kategori.xml" value="0.4" />
         <entry key="..\:/Users/62878/AndroidStudioProjects/ShalatApp/app/src/main/res/layout/item_recycler.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/62878/AndroidStudioProjects/ShalatApp/app/src/main/res/layout/item_recycler_batal_shalat.xml" value="0.4" />

@@ -1,20 +1,18 @@
 package com.example.shalatapp.adapter
 
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.shalatapp.DetailActivity
 import com.example.shalatapp.databinding.ItemRecyclerShalatBinding
 import com.example.shalatapp.model.ShalatItem
 
 class ShalatAdapter : RecyclerView.Adapter<ShalatViewHolder>() {
 
-    private var listItemBatalShalat = arrayListOf<ShalatItem>()
+    private var listItemShalat = arrayListOf<ShalatItem>()
 
     fun addData(items : List<ShalatItem>) {
-        listItemBatalShalat.clear()
-        listItemBatalShalat.addAll(items)
+//        listItemShalat.clear()
+        listItemShalat.addAll(items)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ShalatViewHolder {
@@ -27,11 +25,17 @@ class ShalatAdapter : RecyclerView.Adapter<ShalatViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: ShalatViewHolder, position: Int) {
-        val data = listItemBatalShalat[position]
+        val data = listItemShalat[position]
         holder.bind(data)
+
+//        holder.itemView.setOnClickListener {
+//            val intent = Intent(it.context, DetailActivity::class.java)
+//            intent.putExtra(DetailActivity.Detail_Data, data)
+//            it.context.startActivity(intent)
+//        }
     }
 
     override fun getItemCount(): Int {
-        return listItemBatalShalat.size
+        return listItemShalat.size
     }
 }

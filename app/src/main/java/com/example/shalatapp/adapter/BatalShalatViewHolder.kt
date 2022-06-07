@@ -9,7 +9,7 @@ import com.example.shalatapp.model.BatalShalatItem
 import com.example.shalatapp.model.DalilShalatItem
 
 class BatalShalatViewHolder (val batalShalatBinding : ItemRecyclerBatalShalatBinding) : RecyclerView.ViewHolder(batalShalatBinding.root) {
-    fun bindView(item: DalilShalatItem) {
+    fun bindView(item: BatalShalatItem) {
         itemView.run {
             Glide.with(this).load(item.gambar).into(batalShalatBinding.imgBatalShalat)
             batalShalatBinding.txtJudulBatalShalat.text = item.judul
