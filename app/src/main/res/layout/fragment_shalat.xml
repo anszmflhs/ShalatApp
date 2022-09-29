@@ -72,7 +72,7 @@
                 android:layout_marginTop="34dp"
                 android:layout_marginEnd="8dp"
                 android:fontFamily="@font/poppins_medium"
-                android:text="&quot;Jangan menganggap shalat sebagai beban. Karena Allah jutru menjadikan salat bagi kita untuk meringankan beban.&quot;"
+                android:text="&quot;Jangan menganggap shalat sebagai beban. Karena Allah justru menjadikan shalat bagi kita untuk meringankan beban.&quot;"
                 android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imageView2"
